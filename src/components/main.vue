@@ -2,16 +2,10 @@
   <div>
   <v-layout class="feature kv">
     <div class="obj">
-      <v-img
-        :src="require('../assets/main/key-visual.png')"
-        class="bg"
-        contain
-        height="auto"
-      />
       <div class="logo">
         <v-img
           :src="require('../assets/main/logo.svg')"
-          class=""
+          class="pc-only"
           contain
           height="auto"
         />
@@ -33,7 +27,7 @@
     </div>
     <div class="txt text-center">
       <h1>
-        전세계 IT전문가를 만나는 곳 <br />
+        전세계 <br class="mo-only"/>IT전문가를 만나는 곳 <br />
         CANDi Factory
       </h1>
       <p>
@@ -62,7 +56,7 @@
         </h3>
       </div>
       <div class="menu-list-wrap">
-        <ul class="menu-list" :style="`width:${f02txt.length*300}px`">
+        <ul class="menu-list" >
           <li  v-for="txt in f02txt"
             :key="txt.id"
             :class="txt.active"
@@ -112,16 +106,10 @@
 
     <v-layout class="feature f03">
       <div class="obj">
-        <v-img
-          :src="require('../assets/main/f03-bg.png')"
-          class="bg"
-          contain
-          height="auto"
-        />
       </div>
       <div class="txt text-left">
         <h3 class="feature-title">
-          실시간 프로젝트 진행사항 확인, 단계별 마이크로 검증으로 <br />
+          실시간 프로젝트 진행사항 확인, <br class="mo-only"/>단계별 마이크로 검증으로 <br />
           완벽한 결과물을 만드는 CANDi만의 프로세스
         </h3>
       </div>
@@ -161,13 +149,20 @@
           </li>
         </ul>
       </div>
+      <ul class="carousel mo-only">
+          <li  v-for="txt in f03txt"
+            :key="txt.id"
+            :class="txt.active"
+          >
+          </li>
+      </ul>
     </v-layout>
 
     <v-layout class="feature f04">
       <div class="txt text-center">
         <h3 class="feature-title">
           캔디팩토리는 <br />
-          효율적이고 목표지향적인 개발 생태계를 구축합니다.
+          효율적이고 목표지향적인 <br class="mo-only"/>개발 생태계를 구축합니다.
         </h3>
         <ul class="">
           <li  v-for="txt in f04txt"
@@ -196,7 +191,7 @@
           전세계의 수요자와 공급자를 연결합니다.
         </h3>
         <div class="menu-list-wrap">
-          <ul :style="`width:150%`">
+          <ul>
             <li  v-for="txt in f05txt"
               :key="txt.id"
             >
@@ -225,16 +220,10 @@
 
     <v-layout class="feature f06">
       <div class="obj">
-        <v-img
-          :src="require('../assets/main/f06-bg.png')"
-          class="bg"
-          contain
-          height="auto"
-        />
       </div>
       <div class="txt text-center">
         <p class="feature-sub-title">Global Contribution</p>
-        <h3 class="feature-title">CANDi Factory 는 <br />사회적 가치를창출 하고, 과잉의 자원을 분배합니다.</h3>
+        <h3 class="feature-title">CANDi Factory 는 <br />사회적 가치를창출 하고, <br class="mo-only"/>과잉의 자원을 분배합니다.</h3>
         <p class="feature-desc text-left">CANDi 이용자들은 우리 모두의 상생의 가치 제고에 기여를 합니다. 구성원들은 하드웨어, 소프트웨어, 리워드 기부를 할 수 있으며 CANDi 팀은 저개발 국가의 부족한 IT 인프라와 IT 교육을 제공합니다. CANDi는 지구촌 곳곳에 선한 영향력을 발휘하여 사람을 가장 중요한 인적 자원으로 탈바꿈합니다. 사회적 가치를 창출하고 과잉의 자원을 분배함으로서 지구 재생 프로젝트를 추진합니다.</p>
         <a href="#" class="btn text-left">CANDi 시작하기</a>
       </div>
