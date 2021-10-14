@@ -43,7 +43,7 @@
     </div>
   </v-layout>
 
-    <v-layout class="f01">
+    <v-layout class="feature f01">
       <ul>
         <li v-for="txt in f01txt"
           :key="txt.title"
@@ -54,16 +54,63 @@
       </ul>
     </v-layout>
 
-    <v-layout class="f02">
+    <v-layout class="feature f02">
       <div class="txt text-left">
         <h3 class="feature-title">
           내 비즈니스를 위한 IT 프로젝트를 등록하고, <br />
           전세계의 전문가를 만나보세요.
         </h3>
       </div>
+      <div class="menu-list-wrap">
+        <ul class="menu-list" :style="`width:${f02txt.length*300}px`">
+          <li  v-for="txt in f02txt"
+            :key="txt.id"
+            :class="txt.active"
+          >
+            <a href="#">
+              {{txt.title}}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-info-wrap">
+        <ul class="menu-info" :style="`width:${100 * f02txt.length}%`">
+          <li  v-for="txt in f02txt"
+            :key="txt.id"
+            :class="`${txt.active}`"
+          >
+            <ul class="list-box">
+              <li  v-for="listbox in txt.info"
+                :key="listbox.id"
+                class=""
+              >
+                <h3 class="list-sub-title">{{listbox.title}}</h3>
+                <a class="heart" href="#"></a>
+                <ul class="sub-list">
+                  <li  v-for="sublist in listbox.sublist"
+                    :key="sublist.title"
+                  >
+                    <p class="sub-list-desc">{{sublist.title}} <strong>{{sublist.desc}}</strong></p>
+                  </li>
+                </ul>
+                <p class="list-desc">{{listbox.desc}}</p>
+                <ul class="tag-list">
+                  <li  v-for="tag in listbox.tag"
+                    :key="tag"
+                  >
+                    <p class="tag-desc">{{tag}}</p>
+                  </li>
+                </ul>
+                <a class="more-project" href="#">프로젝트 더보기</a>
+              </li>
+                <a class="request-project" href="#">프로젝트 등록하기</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </v-layout>
 
-    <v-layout class="f03">
+    <v-layout class="feature f03">
       <div class="obj">
         <v-img
           :src="require('../assets/main/f03-bg.png')"
@@ -78,11 +125,45 @@
           완벽한 결과물을 만드는 CANDi만의 프로세스
         </h3>
       </div>
-        <p>등록된 프로젝트</p>
-        <h3>109,030개</h3>
+      <ul class="menu-list">
+        <li  v-for="txt in f03txt"
+          :key="txt.id"
+          :class="txt.active"
+        >
+          <a href="#">
+            {{txt.id+1}}
+          </a>
+        </li>
+      </ul>
+      <div class="menu-info-wrap">
+        <ul class="menu-info" :style="`width:${100 * f03txt.length}%`">
+          <li  v-for="txt in f03txt"
+            :key="txt.id"
+            :class="txt.active"
+          >
+            <p class="list-sub-title">step{{txt.id+1}}</p>
+            <h3 class="list-title">
+              {{txt.title}}
+            </h3>
+            <div class="list-box">
+              <div class="logo">
+                <v-img
+                  :src="require(`../assets/main/${txt.src}`)"
+                  class="bg"
+                  contain
+                  height="auto"
+                />
+              </div>
+              <p class="list-desc">
+                {{txt.desc}}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </v-layout>
 
-    <v-layout class="f04">
+    <v-layout class="feature f04">
       <div class="txt text-center">
         <h3 class="feature-title">
           캔디팩토리는 <br />
@@ -107,31 +188,42 @@
       </div>
     </v-layout>
 
-    <v-layout class="f05">
+    <v-layout class="feature f05">
       <div class="txt text-left">
         <p class="feature-sub-title">Gig Economy</p>
         <h3 class="feature-title">
           최소 업무 단위로 <br/>
           전세계의 수요자와 공급자를 연결합니다.
         </h3>
-        <ul>
-          <li  v-for="txt in f05txt"
-            :key="txt.id"
-          >
-            <div class="list-box" :style="`background-color:${txt.color}`">
-              <p class="list-sub-title">
-                {{txt.title}}
-              </p>
-              <p class="list-desc">
-                {{txt.desc}}
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div class="menu-list-wrap">
+          <ul :style="`width:150%`">
+            <li  v-for="txt in f05txt"
+              :key="txt.id"
+            >
+              <div class="obj">
+                <v-img
+                  :src="require(`../assets/main/${txt.src}`)"
+                  class=""
+                  contain
+                  height="auto"
+                />
+              </div>
+              <div class="list-box" :style="`background-color:${txt.color}`">
+                <p class="list-sub-title">
+                  {{txt.title}}
+                </p>
+                <p class="list-desc">
+                  {{txt.desc}}
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="btn">글로벌 IT전문가 만나기</a>
       </div>
     </v-layout>
 
-    <v-layout class="f06">
+    <v-layout class="feature f06">
       <div class="obj">
         <v-img
           :src="require('../assets/main/f06-bg.png')"
@@ -199,6 +291,266 @@
           desc : "123,456,032원",
         },
       ],
+      f02txt: [
+        {
+          id : 1,
+          title : "Digital Labeling",
+          active : "active",
+          info : [
+            {
+              id : 0,
+              title : "LGE Sales Insight 포털 구축",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+            {
+              id : 1,
+              title : "Cloud 기반 데이터 수집분석 Web플랫폼 ..",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+          ],
+        },
+        {
+          id : 2,
+          title : "Mobile Application",
+          active : "",
+          info : [
+            {
+              id : 0,
+              title : "LGE Sales Insight 포털 구축",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+            {
+              id : 1,
+              title : "Cloud 기반 데이터 수집분석 Web플랫폼 ..",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+          ],
+        },
+        {
+          id : 3,
+          title : "Web Publishing and Development",
+          active : "",
+          info : [
+            {
+              id : 0,
+              title : "LGE Sales Insight 포털 구축",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+            {
+              id : 1,
+              title : "Cloud 기반 데이터 수집분석 Web플랫폼 ..",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+          ],
+        },
+        {
+          id : 4,
+          title : "Big Data Analysis",
+          active : "",
+          info : [
+            {
+              id : 0,
+              title : "LGE Sales Insight 포털 구축",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+            {
+              id : 1,
+              title : "Cloud 기반 데이터 수집분석 Web플랫폼 ..",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+          ],
+        },
+        {
+          id : 5,
+          title : "Crowd intelligence",
+          active : "",
+          info : [
+            {
+              id : 0,
+              title : "LGE Sales Insight 포털 구축",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+            {
+              id : 1,
+              title : "Cloud 기반 데이터 수집분석 Web플랫폼 ..",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+          ],
+        },
+        {
+          id : 6,
+          title : "Metarverse",
+          active : "",
+          info : [
+            {
+              id : 0,
+              title : "LGE Sales Insight 포털 구축",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+            {
+              id : 1,
+              title : "Cloud 기반 데이터 수집분석 Web플랫폼 ..",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+          ],
+        },
+      ],
+
+      f03txt: [
+        {
+          id : 0,
+          title : "내 프로젝트에 딱 맞는 IT파트너 찾기",
+          desc : "컨슈머가 진행하고자 하는 프로젝트를 요구사항에 맞추어 올리거나 플랫폼에서 직접 내 프로젝트에 맞는 파트너를 선정하여 컨택합니다. 만일 컨슈머가 비전문가일 경우 빅데이터에 기반한 CANDi의 최첨단 AI 알고리즘에 의해 개발자를 추천받을 수 있으며 개발 사례들을 통해 선정할 수도 있습니다.",
+          active : "active",
+          src : "f03-ico-1.svg",
+        },
+        {
+          id : 1,
+          title : "내 프로젝트에 딱 맞는 IT파트너 찾기",
+          desc : "컨슈머가 진행하고자 하는 프로젝트를 요구사항에 맞추어 올리거나 플랫폼에서 직접 내 프로젝트에 맞는 파트너를 선정하여 컨택합니다. 만일 컨슈머가 비전문가일 경우 빅데이터에 기반한 CANDi의 최첨단 AI 알고리즘에 의해 개발자를 추천받을 수 있으며 개발 사례들을 통해 선정할 수도 있습니다.",
+          active : "",
+          src : "f03-ico-1.svg",
+        },
+        {
+          id : 2,
+          title : "내 프로젝트에 딱 맞는 IT파트너 찾기",
+          desc : "컨슈머가 진행하고자 하는 프로젝트를 요구사항에 맞추어 올리거나 플랫폼에서 직접 내 프로젝트에 맞는 파트너를 선정하여 컨택합니다. 만일 컨슈머가 비전문가일 경우 빅데이터에 기반한 CANDi의 최첨단 AI 알고리즘에 의해 개발자를 추천받을 수 있으며 개발 사례들을 통해 선정할 수도 있습니다.",
+          active : "",
+          src : "f03-ico-1.svg",
+        },
+      ],
       f04txt: [
         {
           title : "실시간으로 진행사항 점검",
@@ -221,35 +573,35 @@
           id : 1,
           title : "Candi kim",
           desc : "Ai software \n/Web development",
-          src : "f04-ico-1.svg",
+          src : "f05-list-1.png",
           color : "#0F2E63",
         },
         {
           id : 2,
           title : "Seulki Lee",
           desc : "Mobile UX design \n/Web design",
-          src : "f04-ico-2.svg",
+          src : "f05-list-2.png",
           color : "#0058C0",
         },
         {
           id : 3,
           title : "Seulki Lee",
           desc : "Mobile UX design \n/Web design",
-          src : "f04-ico-2.svg",
+          src : "f05-list-3.png",
           color : "#0092C0",
         },
         {
           id : 4,
           title : "Seulki Lee",
           desc : "Mobile UX design \n/Web design",
-          src : "f04-ico-2.svg",
+          src : "f05-list-4.png",
           color : "#0F2E63",
         },
         {
           id : 5,
           title : "Seulki Lee",
           desc : "Mobile UX design \n/Web design",
-          src : "f04-ico-2.svg",
+          src : "f05-list-1.png",
           color : "#29C1CB",
         },
       ]

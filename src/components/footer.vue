@@ -1,22 +1,52 @@
 <template>
-  <v-container>
-    <v-row class="text-left">
-      <v-col cols="12">
-        <p class=" font-weight-bold">
-          주소 서울 서초구 신반포로 194 본관 2층 르호봇 오피스 <br />
-          전화 (070) 8064-0981 <br />
-          Email heycandi@heycandi.com <br />
+  <v-layout class="feature footer">
+    <div class="obj">
+      <div class="logo">
+        <v-img
+          :src="require('../assets/main/logo-black.png')"
+          class=""
+          contain
+          height="auto"
+        />
+      </div>
+    </div>
+    <div class="txt text-left">
+        <p class="">
+          <strong>주소</strong> 서울 서초구 신반포로 194 본관 2층 르호봇 오피스 <br />
+          <strong>전화</strong> (070) 8064-0981 <br />
+          <strong>Email</strong> heycandi@heycandi.com <br />
         </p>
-      </v-col>
-    </v-row>
-  </v-container>
+    </div>
+    <ul>
+      <li  v-for="txt in footertxt"
+        :key="txt.id"
+      >
+      </li>
+    </ul>
+  </v-layout>
 </template>
 
 <script>
   export default {
     name: 'Footer',
-
     data: () => ({
+      footertxt : [
+        {
+          id : 1,
+        },
+        {
+          id : 2,
+        },
+        {
+          id : 3,
+        },
+        {
+          id : 4,
+        },
+        {
+          id : 5,
+        },
+      ],
     }),
   }
 </script>
