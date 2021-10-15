@@ -1,41 +1,42 @@
 <template>
   <div>
-  <v-layout class="feature kv">
-    <div class="obj">
-      <div class="logo">
-        <v-img
-          :src="require('../assets/main/logo.svg')"
-          class="pc-only"
-          contain
-          height="auto"
-        />
-      </div>
-      <v-row
-        cols="12"
-        class="main-menu"
-        style="position: absolute; text-align:right"
-      >
-        <button v-for="link in links"
-          :key="link.text"
-          color="transparant"
-          style="color:#fff"
-          v-on:click="linkto(link.href)"
+    <v-layout class="feature kv">
+      <div class="obj">
+        <div class="logo" v-on:click="mo_header_click()">
+          <v-img
+            :src="require('../assets/main/logo.svg')"
+            class="pc-only"
+            contain
+            height="auto"
+          />
+        </div>
+        <v-row
+          cols="12"
+          class="main-menu"
+          style="position: absolute; text-align:right"
+          v-on:click="mo_header_cancle()"
         >
-          {{ link.text }}
-        </button>
-      </v-row>
-    </div>
-    <div class="txt text-center">
-      <h1>
-        전세계 <br class="mo-only"/>IT전문가를 만나는 곳 <br />
-        CANDi Factory
-      </h1>
-      <p>
-      CANDi는 비즈니스에 필요한 IT기술을 지닌 파트너들을 전세계로 부터 효율적인 비용으로 연결시켜주는 글로벌 워킹 협업 플랫폼 입니다. CANDi만의 양방향 작업 모니터링 시스템하에 시스템 설계, UI/UX 개발, 소프트웨어 프로그래밍등 4,096여 스킬을 가진 파트너들을 만나보세요.
-      </p>
-      <a href="#">Explore More</a>
-    </div>
-  </v-layout>
+          <button v-for="link in links"
+            :key="link.text"
+            color="transparant"
+            style="color:#fff"
+            v-on:click="linkto(link.href)"
+          >
+            {{ link.text }}
+          </button>
+        </v-row>
+      </div>
+      <div class="txt text-center">
+        <h1>
+          전세계 <br class="mo-only"/>IT전문가를 만나는 곳 <br />
+          CANDi Factory
+        </h1>
+        <p>
+        CANDi는 비즈니스에 필요한 IT기술을 지닌 파트너들을 전세계로 부터 효율적인 비용으로 연결시켜주는 글로벌 워킹 협업 플랫폼 입니다. CANDi만의 양방향 작업 모니터링 시스템하에 시스템 설계, UI/UX 개발, 소프트웨어 프로그래밍등 4,096여 스킬을 가진 파트너들을 만나보세요.
+        </p>
+        <a href="#">Explore More</a>
+      </div>
+    </v-layout>
 
     <v-layout class="feature f01">
       <ul>
@@ -61,7 +62,7 @@
             :key="txt.id"
             :class="txt.active"
           >
-            <a href="#">
+            <a href="#" v-on:click="f02menu_click(txt.id)">
               {{txt.title}}
             </a>
           </li>
@@ -118,7 +119,7 @@
           :key="txt.id"
           :class="txt.active"
         >
-          <a href="#">
+          <a href="#" v-on:click="f03menu_click(txt.id)">
             {{txt.id+1}}
           </a>
         </li>
@@ -152,8 +153,9 @@
       <ul class="carousel mo-only">
           <li  v-for="txt in f03txt"
             :key="txt.id"
-            :class="txt.active"
+            :class="txt.carousel_active"
           >
+            <a href="#" v-on:click="f03menu_click(txt.id)"></a>
           </li>
       </ul>
     </v-layout>
@@ -282,13 +284,52 @@
       ],
       f02txt: [
         {
-          id : 1,
+          id : 0,
           title : "Digital Labeling",
           active : "active",
           info : [
             {
               id : 0,
-              title : "LGE Sales Insight 포털 구축",
+              title : "LGE Sales Insight 포털 구축0",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+            {
+              id : 1,
+              title : "Cloud 기반 데이터 수집분석 Web플랫폼 ..",
+              sublist : [
+                {
+                  title : "Budget",
+                  desc : "$390",
+                },
+                {
+                  title : "Experience Level",
+                  desc : "Intermediate",
+                },
+              ],
+              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
+              tag : ["# Strategy&Planning","# Cloud","# react"],
+            },
+          ],
+        },
+        {
+          id : 1,
+          title : "Mobile Application",
+          active : "",
+          info : [
+            {
+              id : 0,
+              title : "LGE Sales Insight 포털 구축1",
               sublist : [
                 {
                   title : "Budget",
@@ -322,12 +363,12 @@
         },
         {
           id : 2,
-          title : "Mobile Application",
+          title : "Web Publishing and Development",
           active : "",
           info : [
             {
               id : 0,
-              title : "LGE Sales Insight 포털 구축",
+              title : "LGE Sales Insight 포털 구축2",
               sublist : [
                 {
                   title : "Budget",
@@ -361,12 +402,12 @@
         },
         {
           id : 3,
-          title : "Web Publishing and Development",
+          title : "Big Data Analysis",
           active : "",
           info : [
             {
               id : 0,
-              title : "LGE Sales Insight 포털 구축",
+              title : "LGE Sales Insight 포털 구축3",
               sublist : [
                 {
                   title : "Budget",
@@ -400,12 +441,12 @@
         },
         {
           id : 4,
-          title : "Big Data Analysis",
+          title : "Crowd intelligence",
           active : "",
           info : [
             {
               id : 0,
-              title : "LGE Sales Insight 포털 구축",
+              title : "LGE Sales Insight 포털 구축4",
               sublist : [
                 {
                   title : "Budget",
@@ -439,51 +480,12 @@
         },
         {
           id : 5,
-          title : "Crowd intelligence",
-          active : "",
-          info : [
-            {
-              id : 0,
-              title : "LGE Sales Insight 포털 구축",
-              sublist : [
-                {
-                  title : "Budget",
-                  desc : "$390",
-                },
-                {
-                  title : "Experience Level",
-                  desc : "Intermediate",
-                },
-              ],
-              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
-              tag : ["# Strategy&Planning","# Cloud","# react"],
-            },
-            {
-              id : 1,
-              title : "Cloud 기반 데이터 수집분석 Web플랫폼 ..",
-              sublist : [
-                {
-                  title : "Budget",
-                  desc : "$390",
-                },
-                {
-                  title : "Experience Level",
-                  desc : "Intermediate",
-                },
-              ],
-              desc : "프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명 입니다. 프로젝트에 대한 설명입니다...",
-              tag : ["# Strategy&Planning","# Cloud","# react"],
-            },
-          ],
-        },
-        {
-          id : 6,
           title : "Metarverse",
           active : "",
           info : [
             {
               id : 0,
-              title : "LGE Sales Insight 포털 구축",
+              title : "LGE Sales Insight 포털 구축5",
               sublist : [
                 {
                   title : "Budget",
@@ -523,6 +525,7 @@
           title : "내 프로젝트에 딱 맞는 IT파트너 찾기",
           desc : "컨슈머가 진행하고자 하는 프로젝트를 요구사항에 맞추어 올리거나 플랫폼에서 직접 내 프로젝트에 맞는 파트너를 선정하여 컨택합니다. 만일 컨슈머가 비전문가일 경우 빅데이터에 기반한 CANDi의 최첨단 AI 알고리즘에 의해 개발자를 추천받을 수 있으며 개발 사례들을 통해 선정할 수도 있습니다.",
           active : "active",
+          carousel_active : "active",
           src : "f03-ico-1.svg",
         },
         {
@@ -530,6 +533,7 @@
           title : "내 프로젝트에 딱 맞는 IT파트너 찾기",
           desc : "컨슈머가 진행하고자 하는 프로젝트를 요구사항에 맞추어 올리거나 플랫폼에서 직접 내 프로젝트에 맞는 파트너를 선정하여 컨택합니다. 만일 컨슈머가 비전문가일 경우 빅데이터에 기반한 CANDi의 최첨단 AI 알고리즘에 의해 개발자를 추천받을 수 있으며 개발 사례들을 통해 선정할 수도 있습니다.",
           active : "",
+          carousel_active : "",
           src : "f03-ico-1.svg",
         },
         {
@@ -537,6 +541,7 @@
           title : "내 프로젝트에 딱 맞는 IT파트너 찾기",
           desc : "컨슈머가 진행하고자 하는 프로젝트를 요구사항에 맞추어 올리거나 플랫폼에서 직접 내 프로젝트에 맞는 파트너를 선정하여 컨택합니다. 만일 컨슈머가 비전문가일 경우 빅데이터에 기반한 CANDi의 최첨단 AI 알고리즘에 의해 개발자를 추천받을 수 있으며 개발 사례들을 통해 선정할 수도 있습니다.",
           active : "",
+          carousel_active : "",
           src : "f03-ico-1.svg",
         },
       ],
@@ -595,10 +600,60 @@
         },
       ]
     }), 
+    mounted() {
+      this.$nextTick(function () {
+        window.onresize = ()=>{
+          var size = { width: window.innerWidth || document.body.clientWidth, height: window.innerHeight || document.body.clientHeight };
+          var width = size.width;
+          if (width > 768) {
+            document.querySelector('.kv .main-menu').style="display:block !important";
+          } else {
+            document.querySelector('.kv .main-menu').style="display:none !important";
+          }
+        }
+      })
+    },
     methods: {
+      mo_header_cancle: () => {
+        var size = { width: window.innerWidth || document.body.clientWidth, height: window.innerHeight || document.body.clientHeight };
+        if (size.width <= 768) {
+          document.querySelector('.kv .main-menu').style="display:none !important";
+        }
+      },
+      mo_header_click: () => {
+        var size = { width: window.innerWidth || document.body.clientWidth, height: window.innerHeight || document.body.clientHeight };
+        if (size.width <= 768) {
+          document.querySelector('.kv .main-menu').style="display:block !important";
+        }
+      },
       linkto: (href) => {
         window.location = href;
-      }
+      },
+      f03menu_click: function(e) {
+        for (let i=0; i< this.f03txt.length; i++) {
+          if (i===e) {
+            this.f03txt[i].carousel_active = "active";
+          } else {
+            this.f03txt[i].carousel_active = "";
+          }
+          if (i <= e) {
+            this.f03txt[i].active = "active"; 
+          } else {
+            this.f03txt[i].active = ""; 
+          }
+        }
+        document.querySelector(".f03 .menu-info").style=`margin-left:${-100*e}%; width:${100 * this.f03txt.length}%`
+      },
+      f02menu_click: function(e) {
+        for (let i=0; i< this.f02txt.length; i++) {
+          if (i===e) {
+            this.f02txt[i].active = "active";
+          } else {
+            this.f02txt[i].active = "";
+          }
+        }
+        console.log(e)
+      },
     }
   }
 </script>
