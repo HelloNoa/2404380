@@ -518,7 +518,6 @@
           ],
         },
       ],
-
       f03txt: [
         {
           id : 0,
@@ -598,8 +597,16 @@
           src : "f05-list-1.png",
           color : "#29C1CB",
         },
-      ]
+      ],
+      touchstartX: '',
+      touchstartY: '',
+      touchendX: '',
+      touchendY: '',
+      touchoffsetX: '',
+      touchoffsetY: '',
     }), 
+    created() {
+    },
     mounted() {
       this.$nextTick(function () {
         window.onresize = ()=>{
@@ -611,7 +618,32 @@
             document.querySelector('.kv .main-menu').style="display:none !important";
           }
         }
-      })
+      });
+
+      document.querySelector('.f03 .menu-info-wrap').addEventListener('touchstart', (event)=> {
+          var touch = event.touches[0];
+          this.touchstartX = touch.clientX;
+          this.touchstartY = touch.clientY;
+      }, false);
+
+      document.querySelector('.f03 .menu-info-wrap').addEventListener('touchend', (event)=> {
+          if(event.touches.length == 0) {
+              var touch = event.changedTouches[event.changedTouches.length - 1];
+              this.touchendX = touch.clientX;
+              this.touchendY = touch.clientY;
+
+              this.touchoffsetX = this.touchendX - this.touchstartX;
+              this.touchoffsetY = this.touchendY - this.touchstartY;
+
+              if(Math.abs(this.touchoffsetX) >= 80 && Math.abs(this.touchoffsetY) <= 10) {
+                  if(this.touchoffsetX < 0) {
+                    this.f03listswipe('right');
+                  } else {
+                    this.f03listswipe('left');
+                  }
+              }
+          }
+      }, false);
     },
     methods: {
       mo_header_cancle: () => {
@@ -628,6 +660,25 @@
       },
       linkto: (href) => {
         window.location = href;
+      },
+      f03listswipe: function(status) {
+        for (let i=0; i< this.f03txt.length; i++) {
+          if (this.f03txt[i].carousel_active === "active") {
+            if (status === "left") {
+              if (i !== 0) {
+                this.f03txt[i-1].carousel_active = "active";
+                this.f03txt[i].carousel_active = "";
+              }
+            } else if (status === "right") {
+              if (i !== this.f03txt.length-1) {
+                console.log(i)
+                this.f03txt[i+1].carousel_active = "active";
+                this.f03txt[i].carousel_active = "";
+              }
+            }
+            break;
+          }
+        }
       },
       f03menu_click: function(e) {
         for (let i=0; i< this.f03txt.length; i++) {
