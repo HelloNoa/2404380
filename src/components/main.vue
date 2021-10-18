@@ -663,17 +663,23 @@
       },
       f03listswipe: function(status) {
         for (let i=0; i< this.f03txt.length; i++) {
+          this.f03txt[i].active = "active"; 
           if (this.f03txt[i].carousel_active === "active") {
             if (status === "left") {
               if (i !== 0) {
                 this.f03txt[i-1].carousel_active = "active";
                 this.f03txt[i].carousel_active = "";
+                this.f03txt[i-1].active = "active"; 
+                this.f03txt[i].active = ""; 
+                document.querySelector(".f03 .menu-info").style=`margin-left:${-100*(i-1)}%; width:${100 * this.f03txt.length}%`
               }
             } else if (status === "right") {
               if (i !== this.f03txt.length-1) {
                 console.log(i)
                 this.f03txt[i+1].carousel_active = "active";
                 this.f03txt[i].carousel_active = "";
+                this.f03txt[i+1].active = "active";
+                document.querySelector(".f03 .menu-info").style=`margin-left:${-100*(i+1)}%; width:${100 * this.f03txt.length}%`
               }
             }
             break;
