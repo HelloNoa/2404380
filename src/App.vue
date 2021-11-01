@@ -1,21 +1,19 @@
 <template>
   <v-app>
     <v-main>
-      <Main/>
+      <router-view />
     </v-main>
     <Footer/>
   </v-app>
 </template>
 
 <script>
-import Main from './components/main';
 import Footer from './components/footer';
 
 export default {
   name: 'App',
 
   components: {
-    Main,
     Footer,
   },
 

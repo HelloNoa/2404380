@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <v-layout class="feature kv" >
       <div class="obj">
         <div class="logo" v-on:click="mo_header_click()">
@@ -245,7 +245,7 @@
       links: [
         {
           text : "About",
-          href: '/',
+          href: '/token',
         },
         {
           text : "Work Marketplace",

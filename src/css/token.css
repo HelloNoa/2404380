@@ -1,0 +1,302 @@
+/* .token .feature {position:relative; font-family: 'Noto Sans KR'; word-break: keep-all;}
+.token .feature.kv {height:900px;}
+.token .feature.kv a {margin-top:183px; font-size:20px; line-height: 28.96px; color:#fff; position: relative; display:inline-block;}
+.token .feature.kv a::after {content:''; position:absolute; background-image: url("./../assets/main/ico-down.svg"); background-position: center center; background-size:20px 32px; width: 20px; height: 32px; left: 50%; transform:translateX(-50%); top:42px;}
+.token .obj {width:100vw; height:100%; margin:0 auto;}
+.token .txt {position:absolute; height:100%; width:100%; left:0; right:0; margin:0px auto 0; word-break: keep-all;}
+.token .logo {position:absolute; left:0; right:0; top:0; margin:0 auto;}
+
+.token .bg {height: 100%; width: 100%; left: 0px; position: absolute !important;}
+.token .kv .obj {background-image: url('./../assets/token/kv.png'); background-size:cover;}
+.token .kv .logo {margin-top:46px; margin-left:108px; width:205px; left:0; top:0;}
+.token .main-menu {font-size:18px; color:#fff; text-align:right; top:0; right:0; padding-top:56px; padding-right:57px; margin:0 !important;}
+.token .main-menu button {margin:0 16px; height:26px;}
+
+.token .feature.kv .txt {color: rgba(179, 255, 253, 1); width:758px; height:182px; font-family: 'Noto Sans KR'; margin-top:286px;}
+.token .feature.kv .txt h1 {font-weight:bold; font-size:80px; line-height:115.84px; margin-bottom:48px; color:rgba(65, 255, 255, 1)}
+.token .feature.kv .txt p {color:#fff; font-weight:400; font-size:24px; line-height:34.75px; width:546px; margin:0 auto; text-align:center; color:rgba(179, 255, 253, 1); margin-bottom:18px;}
+.token .feature.kv .txt p.sub {font-size:14px; line-height:20.27px; color:rgba(255, 255, 255, 1); margin-bottom:0px; opacity: 0.5;}
+
+.token .f01 {height:791px;}
+.token .f01 .obj {width:230px; height:134px; margin-top:165px;}
+.token .f01 .txt {}
+.token .f01 .txt p.breadcrumb {font-size:20px; line-height: 28.96px; font-weight:400; position: absolute; top:59px; left:180px}
+.token .f01 .txt h3.feature-title {margin-top:340px; font-size: 42px; line-height: 60.82px; font-weight:700; text-align: center;}
+.token .f01 .txt p.feature-desc {font-size: 20px; line-height:28.96px; font-weight:300; width:757px; margin:23px auto 0;}
+
+.token .f02 {height:900px; background-color: #000;}
+.token .f02 .txt {width:800px; height:644px; margin:131px auto 0px; background-color: #F5F5F5; border-radius: 20px;}
+.token .f02 .txt .logo {width:43px; height:53px; position: absolute; margin:0; top:21px; left:23px;}
+.token .f02 .txt p.breadcrumb {margin-top:71px; font-size:20px; line-height: 28.96px; font-weight:400; text-align: center;}
+.token .f02 .txt h3.feature-title {margin-top:8px; font-size: 42px; line-height: 60.82px; font-weight:700; text-align: center;}
+.token .f02 .txt p.feature-desc {font-size: 18px; line-height:28.96px; font-weight:300; width:600px; margin:89px auto 0;}
+
+.token .f03 {height:814px;}
+.token .f03 .txt {}
+.token .f03 ul {margin-top:0;}
+.token .f03 ul li {position:relative; display:inline-block; width:280px; height:100%; margin:0 30px; vertical-align: top;}
+.token .f03 ul li .feature-sub-title {font-size:24px; line-height: 54px; margin:0 auto 49px; font-weight:500; width:280px; height:54px; background: #01163A; border-radius: 32px; color:rgba(255, 255, 255, 1); }
+.token .f03 ul li .feature-desc {font-size:18px; line-height:26.06px; width:260px; margin:0 auto; padding-top:0px;}
+.token .f03 .logo {margin:161px auto 52px; width:109px; height:109px; position: relative;}
+
+.token .f04 {height:900px; background: #E5E5E5;}
+.token .f04 .txt {margin:109px 0 0 180px;}
+.token .f04 .txt .feature-sub-title{font-size:24px; line-height:34.75px; color:rgba(0, 0, 0, 1); margin-bottom:33px;}
+.token .f04 .txt .feature-title {font-size:42px; line-height: 60.82px; color:rgba(1, 22, 58, 1);}
+.token .f04 .menu-list-wrap {position: absolute; overflow-y: scroll; width:1235px; }
+.token .f04 ul {margin-top:74px; width:170%; padding:0;}
+.token .f04 ul li {display:inline-block; margin:0 18px; vertical-align: top;}
+.token .f04 ul li:first-child {margin-left: 0;}
+.token .f04 ul li .list-box {width: 353px; height: 377px;; border-radius: 10px; color:#fff; text-align: center;}
+.token .f04 ul li .list-sub-title {font-size:26px; line-height: 37.65px; font-weight: bold; padding-top:39px; margin-bottom:20px;}
+.token .f04 ul li .list-desc {width:270px; font-size: 18px; line-height: 26.06px; margin:0 auto; text-align: left;}
+
+.token .f05 {height:524px; background-color: #000; color:#fff;}
+.token .f05 .txt {}
+.token .f05 .txt h3.feature-title {font-size:42px; line-height: 60.82px; font-weight:700; margin-top:134px;}
+.token .f05 .txt p.feature-desc {font-size:20px; line-height: 28.96px; font-weight:400; margin-top:11px; margin-bottom:66px;}
+.token .f05 .btn {width:248px; height:60px; background-color:#fff; border-radius: 30px; font-size:18px; line-height:54px; color:#01163A; font-weight:500; margin:0 47px 0 0px; padding-left:37px; background-image:url("./../assets/token/f05-ico.svg"); background-size: 18px 17px; background-position: 199px center; display:inline-block; text-align: left;}
+.token .f05 .btn.blank {margin-right: 0; background-color:transparent; color:#fff; border:2px solid #fff; background-image:url("./../assets/token/f05-ico-white.svg");} */
+
+.token .feature {position:relative; font-family: 'Noto Sans KR'; word-break: keep-all; min-width:320px;}
+.token .feature.kv {height:62.5vw;}
+.token .feature.kv a {margin-top:12.709vw; font-size:1.389vw; line-height: 2.012vw; color:#fff; position: relative; display:inline-block;}
+.token .feature.kv a::after {content:''; position:absolute; background-image: url("./../assets/main/ico-down.svg"); background-position: center center; background-size:1.389vw 2.223vw; width: 1.389vw; height: 2.223vw; left: 50%; transform:translateX(-50%); top:2.917vw;}
+.token .obj {width:100vw; height:100%; margin:0 auto;}
+.token .txt {position:absolute; height:100%; width:100%; left:0; right:0; margin:0vw auto 0; word-break: keep-all;}
+.token .logo {position:absolute; left:0; right:0; top:0; margin:0 auto;}
+
+.token .bg {height: 100%; width: 100%; left: 0vw; position: absolute !important;}
+.token .kv .obj {background-image: url('./../assets/token/kv.png'); background-size:cover;}
+.token .kv .logo {margin-top:3.195vw; margin-left:7.5vw; width:14.237vw; left:0; top:0;}
+.token .main-menu {font-size:1.25vw; color:#fff; text-align:right; top:0; right:0; padding-top:3.889vw; padding-right:3.959vw; margin:0 !important;}
+.token .main-menu button {margin:0 1.112vw; height:1.806vw;}
+
+.token .feature.kv .txt {color: rgba(179, 255, 253, 1); width:52.639vw; height:12.639vw; font-family: 'Noto Sans KR'; margin-top:19.862vw;}
+.token .feature.kv .txt h1 {font-weight:bold; font-size:5.556vw; line-height:8.045vw; margin-bottom:3.334vw; color:rgba(65, 255, 255, 1)}
+.token .feature.kv .txt p {color:#fff; font-weight:400; font-size:1.667vw; line-height:2.414vw; width:37.917vw; margin:0 auto; text-align:center; color:rgba(179, 255, 253, 1); margin-bottom:1.25vw;}
+.token .feature.kv .txt p.sub {font-size:0.973vw; line-height:1.408vw; color:rgba(255, 255, 255, 1); margin-bottom:0vw; opacity: 0.5;}
+
+.token .f01 {height:54.931vw;}
+.token .f01 .obj {width:15.973vw; height:9.306vw; margin-top:11.459vw;}
+.token .f01 .txt {}
+.token .f01 .txt p.breadcrumb {font-size:1.389vw; line-height: 2.012vw; font-weight:400; position: absolute; top:4.098vw; left:12.5vw}
+.token .f01 .txt h3.feature-title {margin-top:23.612vw; font-size: 2.917vw; line-height: 4.224vw; font-weight:700; text-align: center;}
+.token .f01 .txt p.feature-desc {font-size: 1.389vw; line-height:2.012vw; font-weight:300; width:52.57vw; margin:1.598vw auto 0;}
+
+.token .f02 {height:62.5vw; background-color: #000;}
+.token .f02 .txt {width:55.556vw; height:44.723vw; margin:9.098vw auto 0vw; background-color: #F5F5F5; border-radius: 1.389vw;}
+.token .f02 .txt .logo {width:2.987vw; height:3.681vw; position: absolute; margin:0; top:1.459vw; left:1.598vw;}
+.token .f02 .txt p.breadcrumb {margin-top:4.931vw; font-size:1.389vw; line-height: 2.012vw; font-weight:400; text-align: center;}
+.token .f02 .txt h3.feature-title {margin-top:0.556vw; font-size: 2.917vw; line-height: 4.224vw; font-weight:700; text-align: center;}
+.token .f02 .txt p.feature-desc {font-size: 1.25vw; line-height:2.012vw; font-weight:300; width:41.667vw; margin:6.181vw auto 0;}
+
+.token .f03 {height:56.528vw;}
+.token .f03 .txt {}
+.token .f03 ul {margin-top:0;}
+.token .f03 ul li {position:relative; display:inline-block; width:19.445vw; height:100%; margin:0 2.084vw; vertical-align: top;}
+.token .f03 ul li .feature-sub-title {font-size:1.667vw; line-height: 3.75vw; margin:0 auto 3.403vw; font-weight:500; width:19.445vw; height:3.75vw; background: #01163A; border-radius: 2.223vw; color:rgba(255, 255, 255, 1); }
+.token .f03 ul li .feature-desc {font-size:1.25vw; line-height:1.81vw; width:18.056vw; margin:0 auto; padding-top:0vw;}
+.token .f03 .logo {margin:11.181vw auto 3.612vw; width:7.57vw; height:7.57vw; position: relative;}
+
+.token .f04 {height:62.5vw; background: #E5E5E5;}
+.token .f04 .txt {margin:7.57vw 0 0 12.5vw;}
+.token .f04 .txt .feature-sub-title{font-size:1.667vw; line-height:2.414vw; color:rgba(0, 0, 0, 1); margin-bottom:2.292vw;}
+.token .f04 .txt .feature-title {font-size:2.917vw; line-height: 4.224vw; color:rgba(1, 22, 58, 1);}
+.token .f04 .menu-list-wrap {position: absolute; overflow-y: scroll; width:85.764vw; }
+.token .f04 ul {margin-top:5.139vw; width:170%; padding:0;}
+.token .f04 ul li {display:inline-block; margin:0 1.25vw; vertical-align: top;}
+.token .f04 ul li:first-child {margin-left: 0;}
+.token .f04 ul li .list-box {width: 24.514vw; height: 26.181vw;; border-radius: 0.695vw; color:#fff; text-align: center;}
+.token .f04 ul li .list-sub-title {font-size:1.806vw; line-height: 2.615vw; font-weight: bold; padding-top:2.709vw; margin-bottom:1.389vw;}
+.token .f04 ul li .list-desc {width:18.75vw; font-size: 1.25vw; line-height: 1.81vw; margin:0 auto; text-align: left;}
+
+.token .f05 {height:36.389vw; background-color: #000; color:#fff;}
+.token .f05 .txt {}
+.token .f05 .txt h3.feature-title {font-size:2.917vw; line-height: 4.224vw; font-weight:700; margin-top:9.306vw;}
+.token .f05 .txt p.feature-desc {font-size:1.389vw; line-height: 2.012vw; font-weight:400; margin-top:0.764vw; margin-bottom:4.584vw;}
+.token .f05 .btn {width:17.223vw; height:4.167vw; background-color:#fff; border-radius: 2.084vw; font-size:1.25vw; line-height:3.75vw; color:#01163A; font-weight:500; margin:0 3.264vw 0 0vw; padding-left:2.57vw; background-image:url("./../assets/token/f05-ico.svg"); background-size: 1.25vw 1.181vw; background-position: 13.82vw center; display:inline-block; text-align: left;}
+.token .f05 .btn.blank {margin-right: 0; background-color:transparent; color:#fff; border:0.139vw solid #fff; background-image:url("./../assets/token/f05-ico-white.svg");}
+@media screen and (max-width:1440px) {
+}
+@media screen and (max-width:768px) {
+    /* .token .feature {position:relative; font-family: 'Noto Sans KR'; word-break: keep-all;}
+    .token .feature.kv {height:398px;}
+    .token .feature.kv a {margin-top:46x; font-size:14px; line-height: 20.27px; color:#fff; position: relative; display:inline-block;}
+    .token .feature.kv a::after {content:''; position:absolute; background-image: url("./../assets/main/ico-down.svg"); background-position: center center; background-size:10px 17px; width: 10px; height: 17px; left: 50%; transform:translateX(-50%); top:29px;}
+    .token .obj {width:100%; height:100%; margin:0 auto;}
+    .token .txt {position:absolute; height:100%; width:100%; left:0; right:0; margin:0 auto 0; word-break: keep-all;}
+    .token .logo {position:absolute; left:0; right:0; top:0; margin:0 auto;}
+
+    .token .bg {height: 100%; width: 100%; left: 0; position: absolute !important;}
+    .token .kv .obj {background-image: url('./../assets/token/kv-m.png'); background-size:cover;}
+    .token .kv .logo {margin-top:3.195vw; margin-left:7.5vw; width:14.237vw; left:0; top:0;}
+    .token .main-menu {font-size:1.25vw; color:#fff; text-align:right; top:0; right:0; padding-top:3.889vw; padding-right:3.959vw; margin:0 !important;}
+    .token .main-menu button {margin:0 1.112vw; height:1.806vw;}
+
+    .token .feature.kv .txt {color: rgba(179, 255, 253, 1); width:100%; height:auto; font-family: 'Noto Sans KR'; margin-top:133px;}
+    .token .feature.kv .txt h1 {font-weight:bold; font-size:26px; line-height:37.65px; margin-bottom:12px; color:rgba(65, 255, 255, 1)}
+    .token .feature.kv .txt p {color:#fff; font-weight:400; font-size:12px; line-height:17.38px; width:100%; margin:0 auto; text-align:center; color:rgba(179, 255, 253, 1); margin-bottom:8px;}
+    .token .feature.kv .txt p.sub {font-size:10px; line-height:14.48px; color:rgba(255, 255, 255, 1); margin-bottom:0;}
+
+    .token .f01 {height:342px;}
+    .token .f01 .obj {width:100px; height:60px; margin-top:70px;}
+    .token .f01 .txt {}
+    .token .f01 .txt p.breadcrumb {font-size:10px; line-height: 14.48px; font-weight:400; position: absolute; top:15px; left:20px;}
+    .token .f01 .txt h3.feature-title {margin-top:151px; font-size: 16px; line-height: 23.17px; font-weight:700; text-align: center;}
+    .token .f01 .txt p.feature-desc {font-size: 10px; line-height:14.48px; font-weight:300; width:350px; margin:12px auto 0;}
+
+    .token .f02 {height:376px; background-color: #000;}
+    .token .f02 .txt {width:330px; height:266px; margin:52px auto 0; background-color: #F5F5F5; border-radius: 8px;}
+    .token .f02 .txt .logo {width:19px; height:24px; position: absolute; margin:0; top:7px; left:11px;}
+    .token .f02 .txt p.breadcrumb {margin:24px auto 0; font-size:10px; line-height: 14.48px; font-weight:400; text-align: center;}
+    .token .f02 .txt h3.feature-title {margin-top:6px; font-size: 16px; line-height: 23.17px; font-weight:700; text-align: center;}
+    .token .f02 .txt p.feature-desc {font-size: 10px; line-height:14.48px; font-weight:300; width:290px; margin:30px auto 0;}
+
+    .token .f03 {height:1086px; background-color: #FAFAFA;}
+    .token .f03 .txt {}
+    .token .f03 ul {margin-top:46px; padding:0;}
+    .token .f03 ul li {background-color:#fff; position:relative; display:block; width:320px; height:320px; margin:0 auto 20px; vertical-align: top; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08); border-radius: 10px; padding-top:38px;}
+    .token .f03 ul li .feature-sub-title {font-size:16px; line-height: 38px; margin:0 auto 16px; font-weight:500; width:208px; height:40px; background: #01163A; border-radius: 32px; color:rgba(255, 255, 255, 1); }
+    .token .f03 ul li .feature-desc {font-size:12px; line-height:17.38px; width:260px; margin:0 auto; padding-top:0vw;}
+    .token .f03 .logo {margin:0 auto 24px; width:94px; height:78px; position: relative;}
+
+    .token .f04 {height:440px; background: #E5E5E5;}
+    .token .f04 .txt {margin:51px 0 0 20px;}
+    .token .f04 .txt .feature-sub-title{font-size:10px; line-height:14.48px; color:rgba(0, 0, 0, 1); margin-bottom:8px;}
+    .token .f04 .txt .feature-title {font-size:16px; line-height: 23.17px; color:rgba(1, 22, 58, 1);}
+    .token .f04 .menu-list-wrap {position: absolute; overflow-y: scroll; width:100%; }
+    .token .f04 ul {margin-top:22px; width:350%; padding:0;}
+    .token .f04 ul li {display:inline-block; margin:0 1.25vw; vertical-align: top;}
+    .token .f04 ul li:first-child {margin-left: 0;}
+    .token .f04 ul li .list-box {width: 235px; height: 251px; border-radius: 10px; color:#fff; text-align: center;}
+    .token .f04 ul li .list-sub-title {font-size:16px; line-height: 23.17px; font-weight: bold; padding-top:23px; margin-bottom:23px;}
+    .token .f04 ul li .list-desc {width:180px; font-size: 12px; line-height: 17.38px; margin:0 auto; text-align: left;}
+
+    .token .f05 {height:380px; background-color: #000; color:#fff;}
+    .token .f05 .txt {}
+    .token .f05 .txt h3.feature-title {font-size:20px; line-height: 17.38px; font-weight:700; margin-top:97px;}
+    .token .f05 .txt p.feature-desc {font-size:14px; line-height: 20.27px; font-weight:400; margin-top:14px; margin-bottom:34px;}
+    .token .f05 .btn {width:198px; height:48px; background-color:#fff; border-radius: 30px; font-size:14px; line-height:46px; color:#01163A; font-weight:500; margin:0 auto 14px; padding-left:30px; background-image:url("./../assets/token/f05-ico.svg"); background-size: 15px 13px; background-position: 159px center; display:block; text-align: left;}
+    .token .f05 .btn.blank {margin-right: auto; background-color:transparent; color:#fff; border:1px solid #fff; background-image:url("./../assets/token/f05-ico-white.svg");} */
+    .token .feature {position:relative; font-family: 'Noto Sans KR'; word-break: keep-all;}
+    .token .feature.kv {height:102.052vw;}
+    .token .feature.kv a {margin-top:46x; font-size:3.59vw; line-height: 5.198vw; color:#fff; position: relative; display:inline-block;}
+    .token .feature.kv a::after {content:''; position:absolute; background-image: url("./../assets/main/ico-down.svg"); background-position: center center; background-size:2.565vw 4.359vw; width: 2.565vw; height: 4.359vw; left: 50%; transform:translateX(-50%); top:7.436vw;}
+    .token .obj {width:100%; height:100%; margin:0 auto;}
+    .token .txt {position:absolute; height:100%; width:100%; left:0; right:0; margin:0 auto 0; word-break: keep-all;}
+    .token .logo {position:absolute; left:0; right:0; top:0; margin:0 auto;}
+
+    .token .bg {height: 100%; width: 100%; left: 0; position: absolute !important;}
+    .token .kv .obj {background-image: url('./../assets/token/kv-m.png'); background-size:cover;}
+    .token .kv .logo {margin-top:3.195vw; margin-left:7.5vw; width:14.237vw; left:0; top:0;}
+    .token .main-menu {font-size:1.25vw; color:#fff; text-align:right; top:0; right:0; padding-top:3.889vw; padding-right:3.959vw; margin:0 !important;}
+    .token .main-menu button {margin:0 1.112vw; height:1.806vw;}
+
+    .token .feature.kv .txt {color: rgba(179, 255, 253, 1); width:100%; height:auto; font-family: 'Noto Sans KR'; margin-top:34.103vw;}
+    .token .feature.kv .txt h1 {font-weight:bold; font-size:6.667vw; line-height:9.654vw; margin-bottom:3.077vw; color:rgba(65, 255, 255, 1)}
+    .token .feature.kv .txt p {color:#fff; font-weight:400; font-size:3.077vw; line-height:4.457vw; width:100%; margin:0 auto; text-align:center; color:rgba(179, 255, 253, 1); margin-bottom:2.052vw;}
+    .token .feature.kv .txt p.sub {font-size:2.565vw; line-height:3.713vw; color:rgba(255, 255, 255, 1); margin-bottom:0;}
+
+    .token .f01 {height:87.693vw;}
+    .token .f01 .obj {width:25.642vw; height:15.385vw; margin-top:17.949vw;}
+    .token .f01 .txt {}
+    .token .f01 .txt p.breadcrumb {font-size:2.565vw; line-height: 3.713vw; font-weight:400; position: absolute; top:3.847vw; left:5.129vw;}
+    .token .f01 .txt h3.feature-title {margin-top:38.718vw; font-size: 4.103vw; line-height: 5.942vw; font-weight:700; text-align: center;}
+    .token .f01 .txt p.feature-desc {font-size: 2.565vw; line-height:3.713vw; font-weight:300; width:89.744vw; margin:3.077vw auto 0;}
+
+    .token .f02 {height:96.411vw; background-color: #000;}
+    .token .f02 .txt {width:84.616vw; height:68.206vw; margin:13.334vw auto 0; background-color: #F5F5F5; border-radius: 2.052vw;}
+    .token .f02 .txt .logo {width:4.872vw; height:6.154vw; position: absolute; margin:0; top:1.795vw; left:2.821vw;}
+    .token .f02 .txt p.breadcrumb {margin:6.154vw auto 0; font-size:2.565vw; line-height: 3.713vw; font-weight:400; text-align: center;}
+    .token .f02 .txt h3.feature-title {margin-top:1.539vw; font-size: 4.103vw; line-height: 5.942vw; font-weight:700; text-align: center;}
+    .token .f02 .txt p.feature-desc {font-size: 2.565vw; line-height:3.713vw; font-weight:300; width:74.359vw; margin:7.693vw auto 0;}
+
+    .token .f03 {height:278.462vw; background-color: #FAFAFA;}
+    .token .f03 .txt {}
+    .token .f03 ul {margin-top:11.795vw; padding:0;}
+    .token .f03 ul li {background-color:#fff; position:relative; display:block; width:82.052vw; height:82.052vw; margin:0 auto 5.129vw; vertical-align: top; box-shadow: 0vw 1.026vw 3.847vw rgba(0, 0, 0, 0.08); border-radius: 2.565vw; padding-top:9.744vw;}
+    .token .f03 ul li .feature-sub-title {font-size:4.103vw; line-height: 9.744vw; margin:0 auto 4.103vw; font-weight:500; width:53.334vw; height:10.257vw; background: #01163A; border-radius: 8.206vw; color:rgba(255, 255, 255, 1); }
+    .token .f03 ul li .feature-desc {font-size:3.077vw; line-height:4.457vw; width:66.667vw; margin:0 auto; padding-top:0vw;}
+    .token .f03 .logo {margin:0 auto 6.154vw; width:24.103vw; height:20vw; position: relative;}
+
+    .token .f04 {height:112.821vw; background: #E5E5E5;}
+    .token .f04 .txt {margin:13.077vw 0 0 5.129vw;}
+    .token .f04 .txt .feature-sub-title{font-size:2.565vw; line-height:3.713vw; color:rgba(0, 0, 0, 1); margin-bottom:2.052vw;}
+    .token .f04 .txt .feature-title {font-size:4.103vw; line-height: 5.942vw; color:rgba(1, 22, 58, 1);}
+    .token .f04 .menu-list-wrap {position: absolute; overflow-y: scroll; width:100%; }
+    .token .f04 ul {margin-top:5.642vw; width:350%; padding:0;}
+    .token .f04 ul li {display:inline-block; margin:0 1.25vw; vertical-align: top;}
+    .token .f04 ul li:first-child {margin-left: 0;}
+    .token .f04 ul li .list-box {width: 60.257vw; height: 64.359vw; border-radius: 2.565vw; color:#fff; text-align: center;}
+    .token .f04 ul li .list-sub-title {font-size:4.103vw; line-height: 5.942vw; font-weight: bold; padding-top:5.898vw; margin-bottom:5.898vw;}
+    .token .f04 ul li .list-desc {width:46.154vw; font-size: 3.077vw; line-height: 4.457vw; margin:0 auto; text-align: left;}
+
+    .token .f05 {height:97.436vw; background-color: #000; color:#fff;}
+    .token .f05 .txt {}
+    .token .f05 .txt h3.feature-title {font-size:5.129vw; line-height: 4.457vw; font-weight:700; margin-top:24.872vw;}
+    .token .f05 .txt p.feature-desc {font-size:3.59vw; line-height: 5.198vw; font-weight:400; margin-top:3.59vw; margin-bottom:8.718vw;}
+    .token .f05 .btn {width:50.77vw; height:12.308vw; background-color:#fff; border-radius: 7.693vw; font-size:3.59vw; line-height:11.795vw; color:#01163A; font-weight:500; margin:0 auto 3.59vw; padding-left:7.693vw; background-image:url("./../assets/token/f05-ico.svg"); background-size: 3.847vw 3.334vw; background-position: 40.77vw center; display:block; text-align: left;}
+    .token .f05 .btn.blank {margin-right: auto; background-color:transparent; color:#fff; border:0.257vw solid #fff; background-image:url("./../assets/token/f05-ico-white.svg");}
+}
+@media screen and (max-width:320px) {
+    .token .feature {position:relative; font-family: 'Noto Sans KR'; word-break: keep-all;}
+    .token .feature.kv {height:326.567px;}
+    .token .feature.kv a {margin-top:46x; font-size:11.488px; line-height: 16.634px; color:#fff; position: relative; display:inline-block;}
+    .token .feature.kv a::after {content:''; position:absolute; background-image: url("./../assets/main/ico-down.svg"); background-position: center center; background-size:8.208px 13.949px; width: 8.208px; height: 13.949px; left: 50%; transform:translateX(-50%); top:23.796px;}
+    .token .obj {width:100%; height:100%; margin:0 auto;}
+    .token .txt {position:absolute; height:100%; width:100%; left:0; right:0; margin:0 auto 0; word-break: keep-all;}
+    .token .logo {position:absolute; left:0; right:0; top:0; margin:0 auto;}
+
+    .token .bg {height: 100%; width: 100%; left: 0; position: absolute !important;}
+    .token .kv .obj {background-image: url('./../assets/token/kv-m.png'); background-size:cover;}
+    .token .kv .logo {margin-top:10.224px; margin-left:24px; width:45.559px; left:0; top:0;}
+    .token .main-menu {font-size:4px; color:#fff; text-align:right; top:0; right:0; padding-top:12.445px; padding-right:12.669px; margin:0 !important;}
+    .token .main-menu button {margin:0 3.559px; height:5.78px;}
+
+    .token .feature.kv .txt {color: rgba(179, 255, 253, 1); width:100%; height:auto; font-family: 'Noto Sans KR'; margin-top:109.13px;}
+    .token .feature.kv .txt h1 {font-weight:bold; font-size:21.335px; line-height:30.893px; margin-bottom:9.847px; color:rgba(65, 255, 255, 1)}
+    .token .feature.kv .txt p {color:#fff; font-weight:400; font-size:9.847px; line-height:14.263px; width:100%; margin:0 auto; text-align:center; color:rgba(179, 255, 253, 1); margin-bottom:6.567px;}
+    .token .feature.kv .txt p.sub {font-size:8.208px; line-height:11.882px; color:rgba(255, 255, 255, 1); margin-bottom:0;}
+
+    .token .f01 {height:280.618px;}
+    .token .f01 .obj {width:82.055px; height:49.232px; margin-top:57.437px;}
+    .token .f01 .txt {}
+    .token .f01 .txt p.breadcrumb {font-size:8.208px; line-height: 11.882px; font-weight:400; position: absolute; top:12.311px; left:16.413px;}
+    .token .f01 .txt h3.feature-title {margin-top:123.898px; font-size: 13.13px; line-height: 19.015px; font-weight:700; text-align: center;}
+    .token .f01 .txt p.feature-desc {font-size: 8.208px; line-height:11.882px; font-weight:300; width:287.181px; margin:9.847px auto 0;}
+
+    .token .f02 {height:308.516px; background-color: #000;}
+    .token .f02 .txt {width:270.772px; height:218.26px; margin:42.669px auto 0; background-color: #F5F5F5; border-radius: 6.567px;}
+    .token .f02 .txt .logo {width:15.591px; height:19.693px; position: absolute; margin:0; top:5.744px; left:9.028px;}
+    .token .f02 .txt p.breadcrumb {margin:19.693px auto 0; font-size:8.208px; line-height: 11.882px; font-weight:400; text-align: center;}
+    .token .f02 .txt h3.feature-title {margin-top:4.925px; font-size: 13.13px; line-height: 19.015px; font-weight:700; text-align: center;}
+    .token .f02 .txt p.feature-desc {font-size: 8.208px; line-height:11.882px; font-weight:300; width:237.949px; margin:24.618px auto 0;}
+
+    .token .f03 {height:891.079px; background-color: #FAFAFA;}
+    .token .f03 .txt {}
+    .token .f03 ul {margin-top:37.744px; padding:0;}
+    .token .f03 ul li {background-color:#fff; position:relative; display:block; width:262.567px; height:262.567px; margin:0 auto 16.413px; vertical-align: top; box-shadow: 0px 3.284px 12.311px rgba(0, 0, 0, 0.08); border-radius: 8.208px; padding-top:31.181px;}
+    .token .f03 ul li .feature-sub-title {font-size:13.13px; line-height: 31.181px; margin:0 auto 13.13px; font-weight:500; width:170.669px; height:32.823px; background: #01163A; border-radius: 26.26px; color:rgba(255, 255, 255, 1); }
+    .token .f03 ul li .feature-desc {font-size:9.847px; line-height:14.263px; width:213.335px; margin:0 auto; padding-top:0px;}
+    .token .f03 .logo {margin:0 auto 19.693px; width:77.13px; height:64px; position: relative;}
+
+    .token .f04 {height:361.028px; background: #E5E5E5;}
+    .token .f04 .txt {margin:41.847px 0 0 16.413px;}
+    .token .f04 .txt .feature-sub-title{font-size:8.208px; line-height:11.882px; color:rgba(0, 0, 0, 1); margin-bottom:6.567px;}
+    .token .f04 .txt .feature-title {font-size:13.13px; line-height: 19.015px; color:rgba(1, 22, 58, 1);}
+    .token .f04 .menu-list-wrap {position: absolute; overflow-y: scroll; width:100%; }
+    .token .f04 ul {margin-top:18.055px; width:350%; padding:0;}
+    .token .f04 ul li {display:inline-block; margin:0 4px; vertical-align: top;}
+    .token .f04 ul li:first-child {margin-left: 0;}
+    .token .f04 ul li .list-box {width: 192.823px; height: 205.949px; border-radius: 8.208px; color:#fff; text-align: center;}
+    .token .f04 ul li .list-sub-title {font-size:13.13px; line-height: 19.015px; font-weight: bold; padding-top:18.874px; margin-bottom:18.874px;}
+    .token .f04 ul li .list-desc {width:147.693px; font-size: 9.847px; line-height: 14.263px; margin:0 auto; text-align: left;}
+
+    .token .f05 {height:311.796px; background-color: #000; color:#fff;}
+    .token .f05 .txt {}
+    .token .f05 .txt h3.feature-title {font-size:16.413px; line-height: 14.263px; font-weight:700; margin-top:79.591px;}
+    .token .f05 .txt p.feature-desc {font-size:11.488px; line-height: 16.634px; font-weight:400; margin-top:11.488px; margin-bottom:27.898px;}
+    .token .f05 .btn {width:162.465px; height:39.386px; background-color:#fff; border-radius: 24.618px; font-size:11.488px; line-height:37.744px; color:#01163A; font-weight:500; margin:0 auto 11.488px; padding-left:24.618px; background-image:url("./../assets/token/f05-ico.svg"); background-size: 12.311px 10.669px; background-position: 130.465px center; display:block; text-align: left;}
+    .token .f05 .btn.blank {margin-right: auto; background-color:transparent; color:#fff; border:0.823px solid #fff; background-image:url("./../assets/token/f05-ico-white.svg");}
+}
