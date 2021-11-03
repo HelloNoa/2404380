@@ -85,6 +85,7 @@
 .token .f01 .txt p.feature-desc {font-size: 1.389vw; line-height:2.012vw; font-weight:300; width:52.57vw; margin:1.598vw auto 0;}
 
 .token .f02 {height:62.5vw; background-color: #000;}
+.token .f02 .obj {height:62.5vw; background-image: url("./../assets/token/f02-bg.png"); background-size: cover;}
 .token .f02 .txt {width:55.556vw; height:44.723vw; margin:9.098vw auto 0vw; background-color: #F5F5F5; border-radius: 1.389vw;}
 .token .f02 .txt .logo {width:2.987vw; height:3.681vw; position: absolute; margin:0; top:1.459vw; left:1.598vw;}
 .token .f02 .txt p.breadcrumb {margin-top:4.931vw; font-size:1.389vw; line-height: 2.012vw; font-weight:400; text-align: center;}
@@ -112,6 +113,7 @@
 .token .f04 ul li .list-desc {width:18.75vw; font-size: 1.25vw; line-height: 1.81vw; margin:0 auto; text-align: left;}
 
 .token .f05 {height:36.389vw; background-color: #000; color:#fff;}
+.token .f05 .obj {height:36.389vw; background-image: url("./../assets/token/f05-bg.png"); background-size: cover;}
 .token .f05 .txt {}
 .token .f05 .txt h3.feature-title {font-size:2.917vw; line-height: 4.224vw; font-weight:700; margin-top:9.306vw;}
 .token .f05 .txt p.feature-desc {font-size:1.389vw; line-height: 2.012vw; font-weight:400; margin-top:0.764vw; margin-bottom:4.584vw;}
@@ -206,6 +208,7 @@
     .token .f01 .txt p.feature-desc {font-size: 2.565vw; line-height:3.713vw; font-weight:300; width:89.744vw; margin:3.077vw auto 0;}
 
     .token .f02 {height:96.411vw; background-color: #000;}
+    .token .f02 .obj {height:96.411vw; background-image: url("./../assets/token/f02-bg-m.png"); background-size: cover;}
     .token .f02 .txt {width:84.616vw; height:68.206vw; margin:13.334vw auto 0; background-color: #F5F5F5; border-radius: 2.052vw;}
     .token .f02 .txt .logo {width:4.872vw; height:6.154vw; position: absolute; margin:0; top:1.795vw; left:2.821vw;}
     .token .f02 .txt p.breadcrumb {margin:6.154vw auto 0; font-size:2.565vw; line-height: 3.713vw; font-weight:400; text-align: center;}
@@ -233,6 +236,7 @@
     .token .f04 ul li .list-desc {width:46.154vw; font-size: 3.077vw; line-height: 4.457vw; margin:0 auto; text-align: left;}
 
     .token .f05 {height:97.436vw; background-color: #000; color:#fff;}
+    .token .f05 .obj {height:97.436vw; background-image: url("./../assets/token/f05-bg-m.png"); background-size: cover;}
     .token .f05 .txt {}
     .token .f05 .txt h3.feature-title {font-size:5.129vw; line-height: 4.457vw; font-weight:700; margin-top:24.872vw;}
     .token .f05 .txt p.feature-desc {font-size:3.59vw; line-height: 5.198vw; font-weight:400; margin-top:3.59vw; margin-bottom:8.718vw;}
